@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Reveal Text</title>
+    <style>
+        #hiddenText {
+            display: none; /* Initially hide the text */
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="revealText()">Click Me to Reveal Text</button>
+    <p id="hiddenText">This text was hidden and now it's visible!</p>
+
+    <script>
+        function revealText() {
+            const textElement = document.getElementById('hiddenText');
+            textElement.style.display = 'block'; // Make the text visible
+        }
+    </script>
+
+</body>
 <body>
    <img src="world-biomes-map.jpg" alt="Biome Map">
 </body>
