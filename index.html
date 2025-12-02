@@ -21,9 +21,6 @@ img {
 .bottomlayer{
   z-index: -1;
 }
-.regionbutton{
-  z-index: -1;
-}
 </style>
   
 <div class="mycontainer">
@@ -31,22 +28,19 @@ img {
 
   <div style="width:60%;" >
 
-  <svg height="1000" width="1000" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
-  <circle r="45" cx="80" cy="60" fill="blue" opacity="0.5" />
-  </svg>
-  <svg height="1000" width="1000" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
+  <svg height="1920" width="1080" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
   <circle r="45" cx="60" cy="150" fill="blue" opacity="0.5" />
   </svg>
-  <svg height="1000" width="1000" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
+  <svg height="1920" width="1080" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
   <circle r="45" cx="200" cy="150" fill="blue" opacity="0.5" />
   </svg>
-  <svg height="1000" width="1000" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
+  <svg height="1920" width="1080" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
   <circle r="45" cx="80" cy="150" fill="blue" opacity="0.5" />
   </svg>
-  <svg height="1000" width="1000" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
+  <svg height="1920" width="1080" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
   <circle r="45" cx="60" cy="150" fill="blue" opacity="0.5" />
   </svg>
-  <svg height="1000" width="1000" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
+  <svg height="1920" width="1080" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
   <circle r="45" cx="60" cy="150" fill="blue" opacity="0.5" />
   </svg>
     
@@ -55,11 +49,11 @@ img {
     <!-- image size: 1157x by 891y -->
     <map name="examplemap">
        <!-- need to make text appear when clicking the location/region -->
-    <area shape="circle" coords="250,215,45" onclick="myFunction1()" alt="Region1" class="regionbutton">
-    <area shape="rect" coords="765,215,885,320" onclick="myFunction2()" alt="Region2" class="regionbutton">
-    <area shape="rect" coords="335,546,400,660" onclick="myFunction3()" alt="Region3" class="regionbutton">
-    <area shape="rect" coords="870,390,1040,490" onclick="myFunction4()" alt="Region4" class="regionbutton">
-    <area shape="rect" coords="530,390,590,420" onclick="myFunction5()" alt="Region5" class="regionbutton">
+    <area shape="circle" coords="250,215,45" onclick="myFunction1()" alt="Region1">
+    <area shape="rect" coords="765,215,885,320" onclick="myFunction2()" alt="Region2">
+    <area shape="rect" coords="335,546,400,660" onclick="myFunction3()" alt="Region3">
+    <area shape="rect" coords="870,390,1040,490" onclick="myFunction4()" alt="Region4">
+    <area shape="rect" coords="530,390,590,420" onclick="myFunction5()" alt="Region5">
   </map>
   <script>
     function myFunction1() {
