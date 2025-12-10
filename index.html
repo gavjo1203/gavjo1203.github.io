@@ -17,10 +17,13 @@ img {
 }
 #MainText {
   width: 40%;
-  background-color: "#D9EEE1";
+  background-color: #D9EEE1;
   padding: 20px;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+
+  overflow-wrap: break-word;  /* modern */
+  word-wrap: break-word;      /* fallback */
+  word-break: normal;
 }
 .regionmarker{
   position: absolute;
