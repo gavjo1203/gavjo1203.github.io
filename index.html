@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <style>
-div.mycontainer {
-  width:100%;
-  overflow:auto;
+.mycontainer {
+  display: flex;
+  width: 100%;
+  gap: 20px;
 }
-div.mycontainer div {
-  width:15%;
-  height:900px;
-  float:left;
-}
+.image-area {
+  width: 60%;
+  position: relative;
 img {
   display: block;
   margin: auto;
-  width:"1157";
-  height:auto;
+  width: 100%;
+  height: auto;
 }
 .regionmarker{
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
   pointer-events: none;
 }
@@ -28,7 +29,7 @@ img {
   
 <div class="mycontainer">
 
-  <div style="width:60%;" >
+  <div class="image-area">
 
   <svg height="900" width="1500" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
   <circle r="45" cx="240" cy="180" fill="blue" opacity="0.5" onclick="myFunction1()"/>
