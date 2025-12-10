@@ -36,11 +36,33 @@ img {
 .bottomlayer{
   z-index: -1;
 }
+.image-wrapper {
+  position: relative;
+  width: 100%;
+}
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.mark {
+  fill: blue;
+  opacity: 0.5;
+  pointer-events: auto;
+}
 </style>
   
 <div class="mycontainer">
 
-  <div class="image-area">
+  <div class="image-wrapper">
 
   <svg height="900" width="1500" xmlns="http://www.w3.org/2000/svg" class="regionmarker">
   <circle r="45" cx="240" cy="180" fill="blue" opacity="0.5" onclick="myFunction1()"/>
@@ -60,6 +82,13 @@ img {
     
   <img src="world-biomes-map.jpg" alt="Biome Map" usemap="#examplemap">
 
+    <svg class="overlay" viewBox="0 0 1157 891" preserveAspectRatio="xMidYMid meet">
+    <circle cx="240" cy="180" r="45" class="mark" onclick="myFunction1()" />
+    <circle cx="830" cy="240" r="45" class="mark" onclick="myFunction2()" />
+    <circle cx="380" cy="560" r="45" class="mark" onclick="myFunction3()" />
+    <circle cx="950" cy="450" r="45" class="mark" onclick="myFunction4()" />
+    <circle cx="580" cy="400" r="45" class="mark" onclick="myFunction5()" />
+  </svg>
     <!-- image size: 1157x by 891y -->
     <map name="examplemap">
        <!-- need to make text appear when clicking the location/region -->
